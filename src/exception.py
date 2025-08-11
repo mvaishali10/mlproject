@@ -3,7 +3,7 @@ import logging
 
 # error details are present in sys 
 def error_message_details(error,error_detail:sys):
-    # exc.info function it will give all the details about the error hence we do not need the info about exc_type,exc_value so we kept underscore
+    # exc_info function it will give all the details about the error hence we do not need the info about exc_type,exc_value so we kept underscore
     # we only need exc_trackback
     # trackback has the info about at what point error occured
     _,_,exc_tb=error_detail.exc_info()
